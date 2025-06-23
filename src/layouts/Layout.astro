@@ -1,13 +1,22 @@
+---
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import '@fontsource-variable/mulish';
+---
+
 <!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+		<title>Tienda DecoCe - Mates, accesorios y detalles para tu hogar</title>
 	</head>
 	<body>
+		<div class="absolute top-0 z-[-2] h-screen w-screen rotate-180 transform bg-white bg-[radial-gradient(60%_120%_at_50%_50%,hsla(0,0%,100%,0)_0,rgba(252,205,238,.5)_100%)]"></div>
+		<Header/>
 		<slot />
 	</body>
 </html>
@@ -18,5 +27,7 @@
 		margin: 0;
 		width: 100%;
 		height: 100%;
+		font-family: 'Mulish Variable';
+		
 	}
 </style>
